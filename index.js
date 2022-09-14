@@ -51,7 +51,15 @@ console.log(combined);
 //stored in variables,
 //passed as an argument in functions, returned from other functions, have their own properties. 
 
-
+function sayHello() {
+  return "Hello, ";
+}
+function greeting(helloMessage, name) {
+  console.log(helloMessage() + name);
+}
+// Pass `sayHello` as an argument to `greeting` function
+greeting(sayHello, "JavaScript!");
+// Hello, JavaScript!
 
 
 //Ques-5 : What are Closures? Give an Example?
